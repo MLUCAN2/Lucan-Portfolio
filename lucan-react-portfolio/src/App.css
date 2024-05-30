@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+nav ul{
+  list-style: none;
+  display: flex;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav button{
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* About Section */
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
 }
 
-.card {
-  padding: 2em;
+.about img{
+  border-radius: 100%;
+  width: 200px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Contact Section */
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
 }
+.contact-page form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.contact-page label{
+  padding: 4px;
+}
+.contact-page button{
+  margin-top: 10px;
+  width: 70px;
+  margin-left: 30%;
+}
+
+/* Footer Section */
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+footer a{
+  padding: 4px;
+  text-decoration: none;
+}
+
+

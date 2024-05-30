@@ -1,35 +1,34 @@
-import React, { useState } from "react";
+// Using Formspree to send email to personal account
+import React from 'react';
+import {useForm, ValidationError} from '@formspree/react'
 
-const Contact= ()=> {
-    const [formState, setFormState]= useState({name: "", email: "", message: ""});
-
-    const handleChange= (e)=> {
-        const {name, value}= e.target;
-        setFormState({...formState, [name]: value});
-    };
-    const handleSubmit= (e)=> {
-        e.preventDefault();
-
-    };
+const Contact = () => {
+    const [state, handleSubmit] = useForm("xgegbjpv");
+  
+    if (state.succeeded) {
+      return <p>Thanks for your message! I should get back to you within 48 hours.</p>;
+    }
+  
     return (
+      <section className='contact-page'>
+        <h2>Contact Me</h2>
         <form onSubmit={handleSubmit}>
-            <label>
-                Name:
-                <input type="text" name="name" value={formState.name} onChange={handleChange}/>
-                {errors.name && <span> {errors.name}</span>}
-            </label>
-            <label>
-                Email:
-                <input type="text" name="email" value={formState.email} onChange={handleChange}/>
-                {errors.email && <span> {errors.email}</span>}
-            </label>
-            <label>
-                Message:
-                <input type="text" name="message" value={formState.message} onChange={handleChange}/>
-                {errors.message && <span> {errors.message}</span>}
-            </label>
+          <label htmlFor="name">Name:</label>
+          <input id="name" type="text" name="name" required/>
+          <ValidationError prefix="Name" field="name" errors={state.errors}/>
+          
+          <label htmlFor="email">Email:</label>
+          <input id="email" type="email" name="email" required/>
+          <ValidationError prefix="Email" field="email" errors={state.errors}/>
+          
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" required/>
+          <ValidationError prefix="Message"field="message" errors={state.errors}/>
+          
+          <button type="submit" disabled={state.submitting}>Submit</button>
         </form>
+      </section>
     );
-};
-
+  };
+  
 export default Contact;
