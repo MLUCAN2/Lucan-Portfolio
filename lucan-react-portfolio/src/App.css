@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #8c4921;
 }
 
 /* Header Section */
@@ -9,15 +10,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 10px;
 }
+header h1{
+  color: white;
+  font-size: 40px;
+}
+
 nav ul{
   list-style: none;
   display: flex;
+  
 }
+
 nav button{
   background: none;
   border: none;
   cursor: pointer;
+  color: white;
+  font-size: 30px;
 }
 
 /* About Section */
@@ -27,11 +38,22 @@ nav button{
   justify-content: center;
   align-items: center;
   padding: 6%;
+  background-color: rgb(61, 61, 61);
+  width: 75%;
+  margin-bottom: 50px;
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.12);
 }
-
+.about h2{
+  color: white;
+  font-size: 40px;
+}
+.about p{
+  color: white;
+  font-size: 20px;
+}
 .about img{
   border-radius: 100%;
-  width: 200px;
+  width: 400px;
 }
 
 /* Contact Section */
@@ -46,17 +68,83 @@ nav button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  background-color:  rgb(61, 61, 61);
+  padding: 15px;  
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
 }
 .contact-page label{
   padding: 4px;
+  color: white;
 }
 .contact-page button{
   margin-top: 10px;
   width: 70px;
-  margin-left: 30%;
+  margin-left: 50px;
 }
 
+/* Portfolio - Project Section */
+.portfolio-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 6%;
+}
+.project{
+  position: relative;
+  width: 100%;
+  transition: transform .3s ease;
+  
+}
+.project-images{
+  position: relative;
+  border: 1px solid rgb(61, 61, 61);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  width: 100%;
+  height: 120px;
+}
+.project:hover{
+  transform: scale(1.05);
+}
+.project-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.project-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.799);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+  
+}
+.project:hover .project-overlay{
+  opacity: 1;
+}
+.project-overlay a{
+  color: black;
+  text-decoration: none;
+  margin: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.project h3{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.project title{
+  color: white;
+}
 /* Footer Section */
 footer{
   display: flex;
@@ -66,6 +154,8 @@ footer{
 footer a{
   padding: 4px;
   text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
 

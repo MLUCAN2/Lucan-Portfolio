@@ -1,15 +1,19 @@
 import React from "react";
 
-const Project = () => (
-    <section className="projects">
-        <card className="Meal-Prep">
-            <img src='./img/Meal-Plan.png' alt='meal-plan-site'/>
-            <h3>Meal-Prep</h3>
-            <a href={`https://devunte.github.io/Meal-Plan/`} target="_blank" rel="noopener norefferer">The App</a>
-            <a href={`https://github.com/Devunte/Meal-Plan.git`} target="_blank" rel="noopener norefferer">Git Repo</a>
-        </card>
-    </section>
-);
+const Project = ({ title, image, appLink, repoLink }) => (
+    <div className="project">
+      <div className="project-images">
+        <div className="project-card">
+          <img src={image} alt={`${title}-site`} className="project-image" />
+          <div className="project-overlay">
+            <a href={appLink} target="_blank" rel="noopener noreferrer">The App</a>
+            <a href={repoLink} target="_blank" rel="noopener noreferrer">Git Repo</a>
+          </div>
+        </div>
+      </div>
+      <h3>{title}</h3>
+    </div>
+  );
 
 export default Project;
 

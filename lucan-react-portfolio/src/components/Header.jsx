@@ -6,10 +6,10 @@ const Header= ({setCurrentPage})=>{
         <header>
             <h1>Myron Lucan</h1>
             <nav>
-                <ul>
-                    <li><button onClick={() => setCurrentPage('About')}>About   |</button></li>
-                    <li><button onClick={() => setCurrentPage('Portfolio')}>Portfolio   |</button></li>
-                    <li><button onClick={() => setCurrentPage('Resume')}>Resume   |</button></li>
+                <ul className="nav-links">
+                    <li><button onClick={() => setCurrentPage('About')}>About |</button></li>
+                    <li><button onClick={() => setCurrentPage('Portfolio')}>Portfolio |</button></li>
+                    <li><button onClick={() => setCurrentPage('Resume')}>Resume |</button></li>
                     <li><button onClick={() => setCurrentPage('Contact')}>Contact</button></li>
                 </ul>
             </nav>
