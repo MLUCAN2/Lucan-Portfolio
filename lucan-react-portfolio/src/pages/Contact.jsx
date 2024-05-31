@@ -11,8 +11,9 @@ const Contact = () => {
   
     return (
       <section className='contact-page'>
-        <h2>Contact Me</h2>
+        <div className= 'contact-me'>
         <form onSubmit={handleSubmit}>
+        <h2>Contact Me</h2>
           <label htmlFor="name">Name:</label>
           <input id="name" type="text" name="name" required/>
           <ValidationError prefix="Name" field="name" errors={state.errors}/>
@@ -27,6 +28,7 @@ const Contact = () => {
           
           <button type="submit" disabled={state.submitting}>Submit</button>
         </form>
+        </div>
       </section>
     );
   };

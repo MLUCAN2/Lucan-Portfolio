@@ -63,14 +63,21 @@ nav button{
   justify-content: center;
   align-items: center;
   padding: 6%;
+
+}
+.contact-me{
+  background-color:  rgb(61, 61, 61);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+  width: auto;
+}
+.contact-page h2{
+  color: white;
 }
 .contact-page form{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:  rgb(61, 61, 61);
   padding: 15px;  
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
 }
 .contact-page label{
   padding: 4px;
@@ -82,12 +89,31 @@ nav button{
   margin-left: 50px;
 }
 
+/* Resume Section */
+.resume-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+.my-resume, .proficiencies{
+  background-color: rgb(61, 61, 61);
+  padding: 10px;
+  margin-bottom: 10%;
+  color: white;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
+.my-resume a{
+  text-decoration: none;
+}
+
 /* Portfolio - Project Section */
 .portfolio-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 6%;
+  color: white;
 }
 .project{
   position: relative;
@@ -98,7 +124,7 @@ nav button{
 .project-images{
   position: relative;
   border: 1px solid rgb(61, 61, 61);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   width: 100%;
   height: 120px;
