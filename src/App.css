@@ -1,59 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #8c4921;
+	background: linear-gradient(
+		-45deg,
+		#303030,
+		#5e5e5e,
+		#686868,
+		#bdb3b3,
+		#9c9595,
+		#f4bcbc,
+		#d1b0b0,
+		#372c2c,
+		#2117171d
+	);
+	background-size: 400% 400%;
+	animation: gradient 100s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 /* Header Section */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
   margin: 10px;
+  
 }
-header h1{
-  color: white;
-  font-size: 40px;
-}
+
 
 nav ul{
   list-style: none;
   display: flex;
-  
+
 }
 
 nav button{
   background: none;
   border: none;
   cursor: pointer;
-  color: white;
+  color: rgb(249, 249, 249);
   font-size: 30px;
+  font-family: "Permanent Marker";
+  text-shadow: #303030;
+
 }
 
 /* About Section */
-.about{
+.home{
+  text-align: center;
+}
+.home h1{
+  color: white;
+  font-family: "Permanent Marker";
+  text-align: center;
+  font-size: 100px;
+}
+.home-content{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6%;
-  background-color: rgb(61, 61, 61);
-  width: 75%;
-  margin-bottom: 50px;
-  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.12);
+  margin: 20px;
 }
-.about h2{
+.photo{
+  flex: 1;
+
+}
+.photo img{
+  max-width: 80%;
+
+  
+}
+.description{
+  flex: 2;
+  padding: 10px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
   color: white;
-  font-size: 40px;
-}
-.about p{
-  color: white;
-  font-size: 20px;
-}
-.about img{
-  border-radius: 100%;
-  width: 400px;
 }
 
 /* Contact Section */
@@ -66,12 +101,13 @@ nav button{
 
 }
 .contact-me{
-  background-color:  rgb(61, 61, 61);
+  background-color:  rgba(61, 61, 61, 0.628);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   width: auto;
 }
 .contact-page h2{
   color: white;
+  font-family: "Permanent Marker";
 }
 .contact-page form{
   display: flex;
@@ -82,6 +118,8 @@ nav button{
 .contact-page label{
   padding: 4px;
   color: white;
+  font-family: "Permanent Marker";
+  text-shadow: black;
 }
 .contact-page button{
   margin-top: 10px;
@@ -182,6 +220,7 @@ footer a{
   text-decoration: none;
   color: white;
   font-size: 20px;
+  font-family: "Permanent Marker";
 }
 
 

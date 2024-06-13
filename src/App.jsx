@@ -1,19 +1,20 @@
+
 import React, {useState} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import About from './pages/About';
+import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 const App= () => {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'About':
-        return <About />;
+      case 'Home':
+        return <Home />;
       case 'Portfolio':
         return <Portfolio />;
       case 'Contact':
@@ -21,7 +22,7 @@ const App= () => {
       case 'Resume':
         return <Resume />;
       default:
-        return <About />;
+        return <Home />;
     }
   };
 
