@@ -163,22 +163,7 @@ nav button{
 .resume-container:hover .resume-link {
   opacity: 1;
 }
-/* .resume-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 40px;
-}
-.my-resume, .proficiencies{
-  background-color: rgb(61, 61, 61);
-  padding: 10px;
-  margin-bottom: 10%;
-  color: white;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
-}
-.my-resume a{
-  text-decoration: none;
-} */
+
 
 /* Portfolio - Project Section */
 .portfolio-grid{
@@ -240,6 +225,7 @@ nav button{
   margin-top: 10px;
   font-weight: 700;
   font-size: 30px;
+  font-family: "Permanent Marker";
 }
 .project title{
   color: white;

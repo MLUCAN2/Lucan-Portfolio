@@ -1,12 +1,13 @@
 import React from 'react';
 import Project from '../components/Project';
+import mealPlan from '../../img/mealPlan.png';
 
 
 const Portfolio = () => {
     const projects = [
       {
         title: 'Meal-Plan',
-        image: './img/Meal-Plan.png',
+        image: mealPlan,
         appLink: 'https://devunte.github.io/Meal-Plan/',
         repoLink: 'https://github.com/Devunte/Meal-Plan.git'
       },
