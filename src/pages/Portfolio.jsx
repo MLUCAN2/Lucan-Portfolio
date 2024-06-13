@@ -7,7 +7,7 @@ const Portfolio = () => {
     const projects = [
       {
         title: 'Meal-Plan',
-        image: mealPlan,
+        image: {mealPlan},
         appLink: 'https://devunte.github.io/Meal-Plan/',
         repoLink: 'https://github.com/Devunte/Meal-Plan.git'
       },
