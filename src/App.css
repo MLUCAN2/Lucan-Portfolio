@@ -128,7 +128,42 @@ nav button{
 }
 
 /* Resume Section */
-.resume-section{
+.resume-section {
+  text-align: center;
+  padding: 2px;
+}
+
+.resume-container {
+  position: relative;
+  display: inline-block;
+}
+
+.resume-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: "Permanent Marker";
+}
+
+.resume-container:hover .resume-link {
+  opacity: 1;
+}
+/* .resume-section{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -143,7 +178,7 @@ nav button{
 }
 .my-resume a{
   text-decoration: none;
-}
+} */
 
 /* Portfolio - Project Section */
 .portfolio-grid{
