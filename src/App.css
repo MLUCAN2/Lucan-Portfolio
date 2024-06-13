@@ -177,6 +177,7 @@ nav button{
   position: relative;
   width: 100%;
   transition: transform .3s ease;
+  font-family: "Permanent Marker";
   
 }
 .project-images{

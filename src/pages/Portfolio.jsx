@@ -1,36 +1,40 @@
 import React from 'react';
 import Project from '../components/Project';
 import mealPlan from '../../img/mealPlan.png';
+import devSeeker from '../../img/devSeeker.png';
+import kanban from '../../img/kanban.png';
+import myReadMe from '../../img/myReadMe.png';
+import logoGenerator from '../../img/logoGenerator.png';
 
 
 const Portfolio = () => {
     const projects = [
       {
         title: 'Meal-Plan',
-        image: {mealPlan},
+        image: mealPlan,
         appLink: 'https://devunte.github.io/Meal-Plan/',
         repoLink: 'https://github.com/Devunte/Meal-Plan.git'
       },
       {
         title: 'Dev-Seeker',
-        image: './img/dev-seeker.png',
+        image: devSeeker,
         appLink: ' https://tech-portfolio-site.onrender.com/',
         repoLink: 'https://github.com/KyleH-Git/tech-portfolio-site.git'
       },
       {
         title: 'Task Board',
-        image: './img/kanban.png',
+        image: kanban,
         appLink: 'https://mlucan2.github.io/team-todo-board/',
         repoLink: 'https://github.com/MLUCAN2/team-todo-board.git'
       },
       {
         title: 'ReadMe Generator',
-        image: './img/my-read-me.png',
+        image: myReadMe,
         repoLink: 'https://github.com/MLUCAN2/my-read-me.git'
       },
       {
         title: 'SVG Logo Generator',
-        image: './img/logo-generator.png',
+        image: logoGenerator,
         repoLink: 'https://github.com/MLUCAN2/logo-generator.git'
       }
     ];
