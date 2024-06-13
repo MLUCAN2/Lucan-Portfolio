@@ -5,7 +5,7 @@ const Nav= ()=> (
     <nav>
         <ul>
             <li>
-                <NavLink to='/'>About Me</NavLink>
+                <NavLink to='/'>Home</NavLink>
             </li>
             <li>
                 <NavLink to='/Portfolio'>Portfolio</NavLink>

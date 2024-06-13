@@ -4,19 +4,19 @@
 body {
 	background: linear-gradient(
 		-45deg,
-		#303030,
-		#5e5e5e,
-		#686868,
+		#c0a365,
+		#6c6648,
+		#adaf89,
 		#bdb3b3,
 		#9c9595,
 		#f4bcbc,
 		#d1b0b0,
-		#372c2c,
-		#2117171d
+		#412f2f,
+		#3822221d
 	);
 	background-size: 400% 400%;
 	animation: gradient 100s ease infinite;
-	height: 100vh;
+	height: 85vh;
 }
 
 @keyframes gradient {
@@ -37,7 +37,6 @@ header {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
-  
 }
 
 
@@ -58,9 +57,10 @@ nav button{
 
 }
 
-/* About Section */
+/* Home Section */
 .home{
   text-align: center;
+  padding-bottom: 85px;
 }
 .home h1{
   color: white;
@@ -98,11 +98,13 @@ nav button{
   justify-content: center;
   align-items: center;
   padding: 6%;
+  padding-bottom: 350px;
 
 }
 .contact-me{
   background-color:  rgba(61, 61, 61, 0.628);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
   width: auto;
 }
 .contact-page h2{
@@ -168,7 +170,7 @@ nav button{
 /* Portfolio - Project Section */
 .portfolio-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 6%;
   color: white;
@@ -186,7 +188,7 @@ nav button{
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   width: 100%;
-  height: 120px;
+  height: 200px;
 }
 .project:hover{
   transform: scale(1.05);

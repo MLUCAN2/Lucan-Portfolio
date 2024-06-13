@@ -6,9 +6,9 @@ const Header= ({setCurrentPage})=>{
         <header>
             <nav>
                 <ul className="nav-links">
-                    <li><button onClick={() => setCurrentPage('Home')}>Home |</button></li>
-                    <li><button onClick={() => setCurrentPage('Portfolio')}>Portfolio |</button></li>
-                    <li><button onClick={() => setCurrentPage('Resume')}>Resume |</button></li>
+                    <li><button onClick={() => setCurrentPage('Home')}>Home </button></li>
+                    <li><button onClick={() => setCurrentPage('Portfolio')}>Portfolio </button></li>
+                    <li><button onClick={() => setCurrentPage('Resume')}>Resume </button></li>
                     <li><button onClick={() => setCurrentPage('Contact')}>Contact</button></li>
                 </ul>
             </nav>
