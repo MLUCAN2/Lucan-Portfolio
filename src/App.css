@@ -35,12 +35,17 @@ body {
 header {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin: 10px;
+  flex-wrap: nowrap;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 nav button {
@@ -56,7 +61,7 @@ nav button {
 /* Home Section */
 .home {
   text-align: center;
-  padding-bottom: 85px;
+  padding-bottom: 45px;
 }
 .home h1 {
   color: white;
@@ -93,33 +98,53 @@ nav button {
   padding: 6%;
   padding-bottom: 350px;
 }
+
 .contact-me {
   background-color: rgba(61, 61, 61, 0.628);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   width: auto;
+  padding: 20px;
 }
+
 .contact-page h2 {
   color: white;
   font-family: "Permanent Marker";
+  text-align: center;
 }
+
 .contact-page form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 15px;
 }
+
 .contact-page label {
   padding: 4px;
   color: white;
   font-family: "Permanent Marker";
   text-shadow: black;
 }
+
 .contact-page button {
   margin-top: 10px;
-  width: 70px;
-  margin-left: 50px;
+  min-width: 120px; 
+  background-color: #29292958; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Permanent Marker";
+  font-size: 18px;
+  text-align: center;
 }
+
+.contact-page button:hover {
+  background-color: #b4b4b4;
+}
+
 
 /* Resume Section */
 .resume-section {
