@@ -2,35 +2,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-	background: linear-gradient(
-		-45deg,
-		#c0a365,
-		#6c6648,
-		#adaf89,
-		#bdb3b3,
-		#9c9595,
-		#f4bcbc,
-		#d1b0b0,
-		#412f2f,
-		#3822221d
-	);
-	background-size: 400% 400%;
-	animation: gradient 100s ease infinite;
-	height: 85vh;
+  background: linear-gradient(
+    -45deg,
+    #c0a365,
+    #6c6648,
+    #adaf89,
+    #bdb3b3,
+    #9c9595,
+    #f4bcbc,
+    #d1b0b0,
+    #412f2f,
+    #3822221d
+  );
+  background-size: 400% 400%;
+  animation: gradient 100s ease infinite;
+  height: 85vh;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
 
 /* Header Section */
 header {
@@ -39,14 +38,12 @@ header {
   margin: 10px;
 }
 
-
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
-
 }
 
-nav button{
+nav button {
   background: none;
   border: none;
   cursor: pointer;
@@ -54,36 +51,32 @@ nav button{
   font-size: 30px;
   font-family: "Permanent Marker";
   text-shadow: #303030;
-
 }
 
 /* Home Section */
-.home{
+.home {
   text-align: center;
   padding-bottom: 85px;
 }
-.home h1{
+.home h1 {
   color: white;
   font-family: "Permanent Marker";
   text-align: center;
   font-size: 100px;
 }
-.home-content{
+.home-content {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
-.photo{
+.photo {
   flex: 1;
-
 }
-.photo img{
+.photo img {
   max-width: 80%;
-
-  
 }
-.description{
+.description {
   flex: 2;
   padding: 10px;
   text-align: left;
@@ -92,38 +85,37 @@ nav button{
 }
 
 /* Contact Section */
-.contact-page{
+.contact-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 6%;
   padding-bottom: 350px;
-
 }
-.contact-me{
-  background-color:  rgba(61, 61, 61, 0.628);
+.contact-me {
+  background-color: rgba(61, 61, 61, 0.628);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
   width: auto;
 }
-.contact-page h2{
+.contact-page h2 {
   color: white;
   font-family: "Permanent Marker";
 }
-.contact-page form{
+.contact-page form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;  
+  padding: 15px;
 }
-.contact-page label{
+.contact-page label {
   padding: 4px;
   color: white;
   font-family: "Permanent Marker";
   text-shadow: black;
 }
-.contact-page button{
+.contact-page button {
   margin-top: 10px;
   width: 70px;
   margin-left: 50px;
@@ -134,19 +126,16 @@ nav button{
   text-align: center;
   padding: 2px;
 }
-
 .resume-container {
   position: relative;
   display: inline-block;
 }
-
 .resume-image {
   width: 100%;
   max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .resume-link {
   position: absolute;
   top: 50%;
@@ -161,45 +150,46 @@ nav button{
   transition: opacity 0.3s ease;
   font-family: "Permanent Marker";
 }
-
 .resume-container:hover .resume-link {
   opacity: 1;
 }
 
-
 /* Portfolio - Project Section */
-.portfolio-grid{
+.portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 6%;
   color: white;
 }
-.project{
+.project {
   position: relative;
   width: 100%;
   transition: transform .3s ease;
   font-family: "Permanent Marker";
-  
 }
-.project-images{
+.project-images {
   position: relative;
   border: 1px solid rgb(61, 61, 61);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   width: 100%;
-  height: 200px;
+  height: 0;
+  padding-bottom: 56.25%; 
 }
-.project:hover{
+.project:hover {
   transform: scale(1.05);
 }
-.project-image{
+.project-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.project-overlay{
+.project-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -211,35 +201,33 @@ nav button{
   align-items: center;
   opacity: 0;
   transition: opacity .3s ease;
-  
 }
-.project:hover .project-overlay{
+.project:hover .project-overlay {
   opacity: 1;
 }
-.project-overlay a{
+.project-overlay a {
   color: black;
   text-decoration: none;
   margin: 20px;
   font-weight: 700;
   font-size: 20px;
 }
-.project h3{
+.project h3 {
   text-align: center;
   margin-top: 10px;
   font-weight: 700;
   font-size: 30px;
   font-family: "Permanent Marker";
 }
-.project title{
+.project title {
   color: white;
 }
 /* Footer Section */
-footer{
+footer {
   display: flex;
   justify-content: center;
 }
-
-footer a{
+footer a {
   padding: 4px;
   text-decoration: none;
   color: white;
@@ -247,4 +235,121 @@ footer a{
   font-family: "Permanent Marker";
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
 
+  header {
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    font-size: 24px;
+  }
+
+  .home h1 {
+    font-size: 50px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo img {
+    max-width: 100%;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .contact-page {
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+
+  .contact-me {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-page form {
+    padding: 0;
+  }
+
+  .resume-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .resume-image {
+    max-width: 100%;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav button {
+    font-size: 18px;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .contact-page h2 {
+    font-size: 24px;
+  }
+
+  .contact-page label {
+    font-size: 16px;
+  }
+
+  .contact-page button {
+    width: 50px;
+    margin-left: 25px;
+  }
+
+  .resume-link {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .project h3 {
+    font-size: 24px;
+  }
+
+  .project-overlay a {
+    font-size: 16px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+}
