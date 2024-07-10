@@ -35,7 +35,7 @@ const Portfolio = () => {
       {
         title: 'Weather App',
         image: weather,
-        techStack: 'HTML, CSS, JavaScript, Third-Party API',
+        techStack: 'HTML, Bootstrap, CSS, JavaScript, Third-Party API',
         appLink:'https://mlucan2.github.io/my-weather-app/',
         repoLink: 'https://github.com/MLUCAN2/my-weather-app'
       },
