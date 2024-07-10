@@ -6,6 +6,7 @@ import kanban from '../../img/kanban.png';
 import myReadMe from '../../img/myReadMe.png';
 import logoGenerator from '../../img/logoGenerator.png';
 import roundAbouts from '../../img/roundAbouts.png';
+import weather from '../../img/weather.png';
 
 
 const Portfolio = () => {
@@ -27,6 +28,12 @@ const Portfolio = () => {
         image: devSeeker,
         appLink: ' https://tech-portfolio-site.onrender.com/',
         repoLink: 'https://github.com/KyleH-Git/tech-portfolio-site.git'
+      },
+      {
+        title: 'Weather App',
+        image: weather,
+        appLink:'https://mlucan2.github.io/my-weather-app/',
+        repoLink: 'https://github.com/MLUCAN2/my-weather-app'
       },
       {
         title: 'Task Board',
